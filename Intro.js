@@ -19,4 +19,13 @@ How Vue Helps ?
 
 // Installation
 // CDN - @next is important becuase v3 is not in main repo of vue js . It is in other repo
-<script src="https://unpkg.com/vue@next"></script>
+{/* <script src="https://unpkg.com/vue@next"></script> */}
+
+
+
+// v-on - Event Handling directives we can replace v-on with @ like @click for v-on:click
+
+// Here click , enter are event modifier 
+// @click.right - right click 
+// @click.prevent - prevent = event.preventDefault
+// @click.prevent.stop 

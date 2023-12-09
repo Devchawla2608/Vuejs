@@ -26,42 +26,42 @@
     </style>
 </head>
 <body>
-    <!-- Two use those keywords we have to use double curly braces will be parsed as javascript -->
     <div id="app" v-cloak>
         {{greeting}}
-        <input v-model = "greeting"/>
+        <input @keyup.enter = "greet"  v-model = "greeting(greeting + '!')"/>
         <hr>
 
         <div v-if = "isVisible" class="box"></div>
-<!-- v-if is kind of if statement -->
 
         <div v-show = "isVisible" class="box"></div>
-<!-- There is different v-if and v-show is that v-if will not maintain a variable but in vshow it will maintain variable just do display none -->
 
-<div v-if = "isVisible" class="box"></div>
-<div v-else-if = "isVisible2" class="box two"></div>
-<div v-else class="box three"></div>
+        <div v-if = "isVisible" class="box"></div>
 
-
-
-
-
+        <!-- <button v-on:click="isVisible = !isVisible">Show Box</button> -->
+        <!-- <button @click="isVisible = !isVisible">Show Box</button> -->
+                <button v-on:click="isToggle">Show Box</button>
     </div>
+
     <script src="https://unpkg.com/vue@next"></script>
     <script>
         let app = Vue.createApp({
+
             data : function(){
                 return {
                     greeting:"Hello Vue 3!",
-                    isVisible:true,
-                    isVisible2:true,
+                    isVisible:true
                 }
+            },
+            methods:{
+                isToggle:function(){
+                            this.isVisible = !this.isVisible
+                        },
+                greet(greeting){
+                            console.log(greeting)
+                        }
             }
         })
         app.mount('#app')
     </script>
 </body>
 </html>
-// This Vue keyword comes from upper script
-// I want to mount my vue application in my html 
-v clock is method which prevents to render anything before the vue application is ready
