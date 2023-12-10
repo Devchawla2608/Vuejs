@@ -198,3 +198,10 @@ export default{
 // • Double Click and Mouse Move event
 // • Interview Question
 
+// ! Vue js two-way binding
+// • What is Two-way binding
+// ? Bind properties model and view 
+// ? Model - javascript | View - Screen
+// • Issue without two way binding
+// • How to apply two-way binding
+// • Interview Question
