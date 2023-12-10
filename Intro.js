@@ -89,3 +89,112 @@
 // • Create Application
 // • Run Application
 // • Check Output
+
+//! How to install using CLI
+// Vue Cli and vue is different
+
+// ! Understand Package.json
+// • Understand Package.json
+// • Understand sre folder
+// • Take A look on Component
+// • Apply first change
+
+// ! Why we use Babel
+// Babel's job is to transform modern JavaScript code into older JavaScript code to ensure it's broadly compatible across browsers
+
+// ! Code Flow
+// • Understand Code Flow
+// • Understand First Component
+// • Remove Extra Code
+// • Checkout Changes
+
+// ! Extenshion
+// Search Vue and Vue editor 
+
+// ! Top Level Component
+// app.vue is top level component which we mount in html 
+
+// ! Component 
+// Every Component has 
+// 1.) Template 
+// 2.) Script 
+// 3.) Style 
+
+
+// ! How to make first component
+// • Make File for Component
+// 1.) Define Template and Script
+// 2.) Import and Use Componen
+// 3.) Add Style
+// 4.) Interview Question
+
+// Component is kind of code for a specific part which can be reused again 
+
+// ! Scoped 
+// We can bind the css to a particular componenet using scoped keyword
+
+
+// ! What is Interpolation in Vue js
+// Helps to use variable , function in template from script
+{/* <h1>Home Component {{"Hello".length}}</h1> */}
+
+// ! What we can do with Interpolation
+// We can pass data of any kind from script but we have to put that data in data section 
+
+
+// ! Can we change the value of data in interpulation ?
+// We can do this in vue but can not do angular and angular also support this feature
+
+// !Define methods
+// !Use methods
+// !this and use data property in functions
+// !Interview Question
+// ? Why we use methods to define method why we can not use methods which we define in data 
+// Because methods which we define in data we can not use variable parallel to that method 
+
+{/* <template>
+    <h1> {{ "Hello".length }} Home Component</h1>
+    <h1></h1>
+    <h1>Email {{ email }}</h1>
+    <h1>Phone {{ phone }}</h1>
+    <h1>Name {{ getName("Sidhu") }}</h1>
+    <h1>{{Name()}}</h1>
+</template>
+<script>
+export default{
+    name:'HomePage',
+    data()
+    {
+        return {
+            email:'dev.chawla2608@gmail.com',
+            mobile:9999,
+            getName:function(a)
+            {
+                return a;
+            }
+        }
+    },
+    methods:{
+        Name()
+        {
+            return "Anil Sidhu"
+        }
+        ,getAge(){
+            return{
+                Name:'Anil',
+                Age:22,
+            }
+        }
+    }
+}
+</script>
+
+<!-- In Simple words we can do any thing in interpulation But if we want to use things , variables , methods from script tag then we have to set data in export default --> */}
+
+// !Events 
+// • How to use Click Event.
+// • How to call function on click
+// • How to pass paramas with event
+// • Double Click and Mouse Move event
+// • Interview Question
+
