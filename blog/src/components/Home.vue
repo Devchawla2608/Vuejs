@@ -1,31 +1,27 @@
 <template>
-    <h1 v-if="show">If Condition</h1>
-    <h1 v-else>Else Condition</h1>
-    <ul>
-        <li v-for="item in technology" :key = "item">{{ item }}</li>
-    </ul>
-    <br>
-    <ul>
-        <li v-for="item in user" :key="item.phone">
-        Name is : {{item.name}} and Email is : {{item.email }}
-        </li>
-    </ul>
-    <button v-on:click = "show = !show">Show</button>
+    <h1>Pass data to child</h1>
+    <Child name = "anil sidhu" :user = "user" :getData = "getData"/>
 </template>
 <script>
+import Child from './Child.vue'
 export default{
     name:'HomePage',
+    components:{
+        Child
+    },
     data(){
         return{
-            technology:['java' , 'php' , 'node' , 'html'],
-            user:[
-                {name:'Anil',phone:'123'},{name:'Shanil',phone:'456'},
-                {name:'Panil',phone:'789'},
-            ]
+            user:{
+                name:'Peter',
+                email:'peter@gmail.com'
+            }
         }
     },
     methods:{
- 
+        getData()
+        {
+            alert("parent function called")
+        }
     }
 }
 </script>
