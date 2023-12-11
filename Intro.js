@@ -227,3 +227,10 @@ export default{
 // • Define Array of Object in Data Property
 // • Apply Loop on it.
 // • Interview Question
+
+// ! 1. Make Child Component
+// 2. Import and Use Child Component
+// 3. Pass Static Data
+// 4. Pass Property, Object, and Function to
+// Child Component
+// 5. Interview Question
