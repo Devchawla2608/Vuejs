@@ -205,3 +205,14 @@ export default{
 // • Issue without two way binding
 // • How to apply two-way binding
 // • Interview Question
+
+//! • Make 2 Input fields.
+// • Make a function for getting value
+// • Define Data Property
+// • Apply two-way binding
+// • Interview Question
+
+// ! • Make Checkbox with Label
+// • Make Radio Button with Label
+// • Define Data Property
+// • Apply two-way binding
