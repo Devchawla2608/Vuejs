@@ -216,3 +216,14 @@ export default{
 // • Make Radio Button with Label
 // • Define Data Property
 // • Apply two-way binding
+
+// ! • Write Html code for show and hide
+// • Apply if and else condition
+// • If and else condition with a button click
+// • Interview Question
+
+// ! • Define Array in Data Property
+// • Apply Loop on it
+// • Define Array of Object in Data Property
+// • Apply Loop on it.
+// • Interview Question
