@@ -1,22 +1,21 @@
 <template>
-    <h1>{{ childUser }}</h1>
-<Child :getChildName = "getChildName"/>  
+    <h1>Ref in vuejs</h1>
+<input type="text" ref = "input"> 
+<button v-on:click="getData">Click Me</button>
 </template>
 <script>
-import Child from './Child.vue'
 export default{
     name:'HomePage',
-    components:{
-        Child,
-    },
     data(){
         return{
-            childUser:""
         }
     },
     methods:{
-        getChildName(name){
-            this.childUser = name
+        getData(name){
+            this.$refs.input.focus();
+            let val = this.$refs.input.value
+            console.log(val)
+            this.$refs.input.style.color = "red";
         }
     }
 }

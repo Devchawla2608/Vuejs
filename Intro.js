@@ -271,3 +271,8 @@ export default{
 // 4. Operations with ref
 // 5. Interview Question
 // value , style , error can be done using ref
+
+// ! 1. Define some input field.
+// 2. Apply 2-way binding.
+// 3. Print and submit value.
+// 4. Interview Question. z
