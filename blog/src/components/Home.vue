@@ -1,13 +1,6 @@
 <template>
-    <h1>Pass data to child</h1>
-    <ul>
-        <li v-for="item in user" :key = "item.name">
-            <Child :data="item" :getData="getData"/>
-        </li>
-    </ul>
-    <div v-html="tag">
-
-    </div>
+    <h1 :class="{green:colorfull}">Class Binding</h1>
+    <button v-on:click="colorfull = !colorfull">Color</button>
 </template>
 <script>
 import Child from './Child.vue'
@@ -18,28 +11,29 @@ export default{
     },
     data(){
         return{
-            user:[
-            {
-                name:'Peter',
-                email:'peter@gmail.com'
-            },
-            {
-                name:'Sam',
-                email:'Sam@gmail.com'
-            },
-            {
-                name:'DEV',
-                email:'DEV@gmail.com'
-            },
-
-        ],
-        tag:"<h1>Dev Chawla</h1>"
+            colorfull : true
+        }
+    },
+    computed:{
+        applyStyle(){
+            return {
+                green:this.colorfull,
+                err:true,
+                other:false
+            }
         }
     },
     methods:{
-            getData(name){
-                alert("Name :" , name)
-            }
     }
 }
 </script>
+<style>
+.green{
+    background-color: green;
+    width: 200px;
+    padding: 10px;
+}
+.err{
+    background-color: red;
+}
+</style>
