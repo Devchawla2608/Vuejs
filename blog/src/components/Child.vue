@@ -1,15 +1,18 @@
 <template>
-<h2>Props : {{ name }}</h2>
-<h2>Props : {{ user.name }}</h2>
-<button v-on:click="getData()">Call Function</button>
+<h2>User Component</h2>
+<div>
+    <h1>data.name</h1>
+    <h2>data.email</h2>
+    <button v-on:click="getData(data.name)">Alert Name</button>
+</div>
+
 </template>
 <script>
     export default{
         name:'ChildPage',
         props:{
-            name:String,
-            user:Object,
-            getData:Function,
-        }
+            data:Object,
+            getData:Function
+        },
     }
 </script>

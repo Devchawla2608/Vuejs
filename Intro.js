@@ -240,3 +240,15 @@ export default{
 // 3. Apply For Loop on Array
 // 4. Pass Property to Child Component
 // 5. Interview Question
+
+// ! 1. Why we need HTML binding
+// 2. How to apply HTML tag binding
+// 3. How to apply 2 HTML tag binding
+// 4. Interview Question
+
+// !1. What is class binding
+// class banding - Sometime we have to add dynamic classes as well 
+// 2. Add simple dynamic class
+// 3. Change class on Button click
+// 4. Dynamic class with function
+// 5. Interview Question
