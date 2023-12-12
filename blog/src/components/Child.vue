@@ -1,12 +1,17 @@
 <template>
-<h2>Student Component</h2>
-<h1>Student Price : {{name}}</h1>
+<h2>Child Component</h2>
+<button v-on:click="getChildName(name)">Send Children Name</button>
 </template>
 <script>
     export default{
         name:'ChildPage',
+        data(){
+            return{
+                name:"Children"
+            }
+        },
         props:{
-            name:String
+            getChildName:Function
         }
     }
 </script>

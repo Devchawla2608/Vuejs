@@ -1,22 +1,23 @@
 <template>
-<Child :name = "name" />  
-<Teacher :name = "name"/>
+    <h1>{{ childUser }}</h1>
+<Child :getChildName = "getChildName"/>  
 </template>
 <script>
 import Child from './Child.vue'
-import Teacher from './Teacher.vue'
 export default{
     name:'HomePage',
     components:{
         Child,
-        Teacher
     },
     data(){
         return{
-            name:"Burce"
+            childUser:""
         }
     },
     methods:{
+        getChildName(name){
+            this.childUser = name
+        }
     }
 }
 </script>

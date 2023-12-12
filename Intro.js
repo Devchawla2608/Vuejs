@@ -264,3 +264,10 @@ export default{
 // 2. Pass Data and function as props
 // 3. Share child component with parent
 // 4. Interview Question
+
+// ! 1. What is Ref
+// 2. Make input field
+// 3. Apply Ref
+// 4. Operations with ref
+// 5. Interview Question
+// value , style , error can be done using ref
