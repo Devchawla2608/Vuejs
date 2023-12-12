@@ -276,3 +276,13 @@ export default{
 // 2. Apply 2-way binding.
 // 3. Print and submit value.
 // 4. Interview Question. z
+
+// ! 1. Continue Last Video
+// 2. Add
+// 1. Radio button
+// 2. Checkbox
+// 3. Select box
+// 3. Define Property and B
+// 4. Print and submit value,
+// 5. Interview Question.
+// Pallapion
