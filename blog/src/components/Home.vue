@@ -1,26 +1,19 @@
 <template>
-    <h1 :class="{green:colorfull}">Class Binding</h1>
-    <button v-on:click="colorfull = !colorfull">Color</button>
+<Child :name = "name" />  
+<Teacher :name = "name"/>
 </template>
 <script>
 import Child from './Child.vue'
+import Teacher from './Teacher.vue'
 export default{
     name:'HomePage',
     components:{
-        Child
+        Child,
+        Teacher
     },
     data(){
         return{
-            colorfull : true
-        }
-    },
-    computed:{
-        applyStyle(){
-            return {
-                green:this.colorfull,
-                err:true,
-                other:false
-            }
+            name:"Burce"
         }
     },
     methods:{
@@ -28,12 +21,5 @@ export default{
 }
 </script>
 <style>
-.green{
-    background-color: green;
-    width: 200px;
-    padding: 10px;
-}
-.err{
-    background-color: red;
-}
+
 </style>

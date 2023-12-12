@@ -252,3 +252,15 @@ export default{
 // 3. Change class on Button click
 // 4. Dynamic class with function
 // 5. Interview Question
+
+// ! 1. What are props.
+// If we want to send data from one component to other know as props . It is not necessary that those components will be parent child
+// 2. How to pass data with props
+// 3. What we can pass with props
+// 4. Interview Question
+// 5. Can we send data from child to parent 
+
+// ! 1. Make Child Component
+// 2. Pass Data and function as props
+// 3. Share child component with parent
+// 4. Interview Question
