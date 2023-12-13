@@ -1,27 +1,27 @@
 <template>
-    <h1>Computed Property</h1>
-    <h2>Computed Property : {{ getResult }}</h2>
-    <h2>Methods : {{ getResultMethod() }}</h2>
+    <h1>Watchers</h1>
+    <h2>{{ count }}</h2>
+    <button v-on:click="count = count + 1">+</button>
+    <button v-on:click = "count = count - 1">-</button>
 </template>
 <script>
 export default{
     name:'HomePage',
     data(){
             return{
-                dollors:100,
-                rupeesValue:70,
-                discount:10
+                count:0
             }
         },
-        computed:{
-            getResult(){
-                return (this.dollors*this.rupeesValue)-this.discount;
+        watch:{
+            count(val , prev){
+                if(val > 5 && prev < val){
+                    alert("Stop Counting")
+                }else if(val > 10){
+                    this.count = 0
+                }
             }
         },
-        methods:{
-            getResultMethod(){
-                return (this.dollors*this.rupeesValue)-this.discount;
-            }
+         methods:{
         }
 }
 </script>
