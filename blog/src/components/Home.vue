@@ -1,22 +1,28 @@
 <template>
-    <h1>Non Props Data</h1>
-    <Child data = "some data" id="child_cmp"/>
+    <h1>Computed Property</h1>
+    <h2>Computed Property : {{ getResult }}</h2>
+    <h2>Methods : {{ getResultMethod() }}</h2>
 </template>
 <script>
-import Child from './Child.vue'
 export default{
     name:'HomePage',
-    components:{
-        Child
-    },
     data(){
-        return{
-            
+            return{
+                dollors:100,
+                rupeesValue:70,
+                discount:10
+            }
+        },
+        computed:{
+            getResult(){
+                return (this.dollors*this.rupeesValue)-this.discount;
+            }
+        },
+        methods:{
+            getResultMethod(){
+                return (this.dollors*this.rupeesValue)-this.discount;
+            }
         }
-    },
-    methods:{
-
-    }
 }
 </script>
 <style>

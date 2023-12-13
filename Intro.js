@@ -319,3 +319,9 @@ export default{
 // Computed Property.
 // 3. Example of Computed Property?
 // 4. Interview Question
+
+// ! 1. What are Watchers?
+// ? Wathcers always see the data properties and when ever the data properties changes they call a function , and we write a function using watch and name of property and watcher will always be same
+// 2. How to use Watchers?
+// 3. Example
+// 4. Interview Question

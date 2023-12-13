@@ -7,14 +7,21 @@
 <script>
     export default{
         name:'ChildPage',
-        inheritAttrs:false,
         props:{
             data:String
         },
         data(){
             return{
+                dollors:100,
+                rupeesValue:70,
+                discount:10
             }
         },
+        computed:{
+            getResult(){
+                return (this.dollors*this.rupeesValue)-this.discount;
+            }
+        }
     }
 </script>
 
