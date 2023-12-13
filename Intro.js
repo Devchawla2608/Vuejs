@@ -302,6 +302,13 @@ export default{
 // 5. Interview Question.
 
 // ! 1. What is Form Modifiers
+// These always used with v-model and always use these with form or input 
 // 2. How to use Modifiers
+// Modifiers are some kind of properties of v-model 
 // 3. Examples
+// 4. Interview Question.
+
+// ! 1. Make A Child Component
+// 2. Pass Non-Props Data
+// 3. Difference between Props and Non-Props Data
 // 4. Interview Question.
