@@ -1,52 +1,28 @@
 <template>
-    <h1>Slotes</h1>
-    <!-- <Child data = "anil sidhu"/> -->
-    <!-- For Slots -->
-    <!-- <Child>
-        <h1>
-            Code By Deepanshu
-        </h1>
-    </Child>
-    <Child>
-        <a href="">Code By Deepanshu</a>
-    </Child>
-    <Child>
-        <img src="../assets/logo.png" alt="">
-    </Child> -->
-<Child>
-    <template v-slot:header>
-        <h1>Peter</h1>
-    </template>
-    <template v-slot:main>
-        <h1>Mid</h1>
-    </template>
-    <template v-slot:footer>
-        <h1>Footer</h1>
-    </template>
-</Child>
+<h1>Home</h1>
+<Java/>
+<Button v-on:click = "tab = Java">Load Java</Button>
+<Node/>
+<Button v-on:click = "tab = Node">Load Node</Button>
+<Php/>
+<Button v-on:click = "tab = Php">Load Php</Button>
 
-<Child>
-    <template v-slot:header>
-        <h1>FaceBook</h1>
-    </template>
-    <template v-slot:main>
-        <h1>React</h1>
-    </template>
-    <template v-slot:footer>
-        <h1>Buy Now</h1>
-    </template>
-</Child>
-
+<component :is = "tab"/>
 </template>
 <script>
-import Child from './Child.vue'
+import Java from './Java.vue'
+import Php from './Php.vue'
+import Node from './Node.vue'
 export default{
     name:'HomePage',
     components:{
-        Child
+        Java,
+        Php,
+        Node
     },
     data(){
             return{
+                tab:'Java'
             }
         },
          methods:{

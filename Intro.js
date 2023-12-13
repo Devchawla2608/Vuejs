@@ -337,3 +337,9 @@ export default{
 // 3. Example of Named Slot
 // 4. Interview Question
 // Multiple Slots with name
+
+
+// ! 1. What is a dynamic Component?
+// 2. Why we should not use "if-else" condition?
+// 3. Load Dynamic Component in Proper way
+// 4. Interview Question
