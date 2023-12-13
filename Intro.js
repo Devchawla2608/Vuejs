@@ -325,3 +325,15 @@ export default{
 // 2. How to use Watchers?
 // 3. Example
 // 4. Interview Question
+
+// ! 1. What are Slots
+// ? If i want to send data to the child of different type then components have this limitation so we have to take care of this and slots has the solution for this
+// 2. How to use Slots?
+// 3. Example
+// 4. Interview Question
+
+// ! 1. Continue Last Video
+// 2. Problem with Normal Slot?
+// 3. Example of Named Slot
+// 4. Interview Question
+// Multiple Slots with name

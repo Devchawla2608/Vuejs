@@ -1,27 +1,31 @@
 <template>
-    <div>
-        <h2 v-bind="$attrs">Child Component</h2>
-        <h3>{{ data }}</h3>
-    </div>
+    <h1>Slots in Vue js</h1>
+    <header>
+        <slot name = "header">
+            <h1 name = "header">Default Data</h1>
+        </slot>
+    </header>
+    <content>
+        <slot name = "main">
+            <h1>Default Data</h1>
+        </slot>
+    </content>
+    <footer>
+        <slot name = "footer">
+            <h1>Default Data</h1>
+        </slot>
+    </footer>
 </template>
 <script>
     export default{
         name:'ChildPage',
         props:{
             data:String
-        },
+        },              
         data(){
             return{
-                dollors:100,
-                rupeesValue:70,
-                discount:10
             }
         },
-        computed:{
-            getResult(){
-                return (this.dollors*this.rupeesValue)-this.discount;
-            }
-        }
     }
 </script>
 
