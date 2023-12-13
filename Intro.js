@@ -312,3 +312,10 @@ export default{
 // 2. Pass Non-Props Data
 // 3. Difference between Props and Non-Props Data
 // 4. Interview Question.
+
+// ! 1. What is Computed Property?
+// ? Computed property are chached based due to its reactive property . We can use functions as well but the function will run every time . But computed property have good speed of calculation
+// 2. Difference Between template Expression and
+// Computed Property.
+// 3. Example of Computed Property?
+// 4. Interview Question

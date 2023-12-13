@@ -1,18 +1,17 @@
 <template>
-    <h1>Modifiers</h1>
-    <input type="text" v-model="data">
-    <input type="text" v-model.lazy="data">
-    <!-- <input type="text" v-model.trim="data"> -->
-    <input type="text" v-model.number="data">
-    <input type="text" v-model.number.lazy="data">
-    <h2>Data is:{{ data }}</h2>
+    <h1>Non Props Data</h1>
+    <Child data = "some data" id="child_cmp"/>
 </template>
 <script>
+import Child from './Child.vue'
 export default{
     name:'HomePage',
+    components:{
+        Child
+    },
     data(){
         return{
-            data:''
+            
         }
     },
     methods:{
@@ -21,5 +20,7 @@ export default{
 }
 </script>
 <style>
-
+h1{
+    color: orange;
+}
 </style>
