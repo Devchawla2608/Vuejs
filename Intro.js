@@ -343,3 +343,9 @@ export default{
 // 2. Why we should not use "if-else" condition?
 // 3. Load Dynamic Component in Proper way
 // 4. Interview Question
+
+// ! 1. What is a Teleport Component?
+// ? Ideally we generally write code and that code goes to div with id app but using teleport we can teleport the content from vue to out of app div
+// 2. Example of Teleport Component
+// 3. Use of Teleport Component
+// 4. Interview Question
