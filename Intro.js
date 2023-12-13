@@ -286,3 +286,22 @@ export default{
 // 4. Print and submit value,
 // 5. Interview Question.
 // Pallapion
+
+//  ! 1. Continue Last Video
+// 2. Add error property
+// 3. Apply Loop over form files and collect
+// error
+// 4. Use for loop show errors
+// 5. Interview Question.
+
+// ! 1. Continue Last Video
+// 2. Add error property
+// 3. Apply Loop over form files and collect
+// error
+// 4. Use for loop show errors
+// 5. Interview Question.
+
+// ! 1. What is Form Modifiers
+// 2. How to use Modifiers
+// 3. Examples
+// 4. Interview Question.
