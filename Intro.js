@@ -1,31 +1,50 @@
-Vue js is a javascript framework for building application/
+// ! Vue js is a javascript framework for building application/
 
-How Vue Helps ?
-1.) Fast Application
-2.) Dynamic Application 
-3.) Speed of development 
-4.) Developer Tools 
-5.) Helps with scaling 
+// ! How Vue Helps ?
+// 1.) Fast Application
+// 2.) Dynamic Application 
+// 3.) Speed of development 
+// 4.) Developer Tools 
+// 5.) Helps with scaling 
 
 // ! Vue Js
-// Virtual dom framework 
-// Lightweight(10k gzip)
-// Progressive 
-// Flexible 
-// Incrementally adoptable 
+// 1.) Virtual dom framework 
+// 2.) Lightweight(10k gzip)
+// 3.) Progressive 
+// 4.) Flexible 
+// 5.) Incrementally adoptable 
 
-// History of Vue.js
-
-
-// Installation
-// CDN - @next is important becuase v3 is not in main repo of vue js . It is in other repo
-{/* <script src="https://unpkg.com/vue@next"></script> */}
-
+// ! what is Vue js ?
+// 1.) Javascript Framework for building web app 
+// 2.) Vue js is progressive framework
+// 3.) Vue js 3 is the current version 
+// 4.) We make SPA in vue js
 
 
-// v-on - Event Handling directives we can replace v-on with @ like @click for v-on:click
+// ! History of Vue.js
+// 1.) Initial Release 
+// 2.) Current version is 3.0.5
+// 3.) Vuejs 3 is the current version 
+// 4.) Created by Evan You 
+// 5.) Evan you were working for google 
 
-// Here click , enter are event modifier 
-// @click.right - right click 
-// @click.prevent - prevent = event.preventDefault
-// @click.prevent.stop 
+
+
+// ! Main Topic of this Series
+// • Introduction
+// • Setup and Installation
+// • Life Cycle.
+// • Routing
+// • State Managment
+// • How to start with code
+// • Component
+// • Condition and Loops
+// • Form handing
+// • API integration
+// • Small Project
+// • BuildI
+// • 3rd Party Library
+// • Interview Questions
+
+
+
